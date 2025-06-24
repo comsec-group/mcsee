@@ -7,15 +7,13 @@ Our work sheds light on the current state of Rowhammer attacks and defenses by b
 
 ###  Metadata
 
-| **Property**    | [![Academic Code](https://img.shields.io/badge/Origin-Academic%20Code-C1ACA0.svg?style=flat)]() [![License: GPL](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/gpl-3-0) [![contributions welcome](https://img.shields.io/badge/Contributions-Welcome!-orange.svg?style=flat)]()                      | 
-|--------------|--------------------------------------------------------------------|
-| Authors      | Patrick Jattke, Michele Marazzi, Flavien Solt, Max Wipfli, Stefan Gloor, and Kaveh Razavi |
-| Organization | ETH Zurich, [COMSEC Group](https://comsec.ethz.ch/)                                           |
-| Publisher    | [34th USENIX Security Symposium 2025](https://www.usenix.org/conference/usenixsecurity25)                                     |
-| Webpage      | https://comsec.ethz.ch/mcsee                                       |
-| Paper        | https://comsec-files.ethz.ch/papers/mcsee_sec25.pdf                |
-
-
+| **Property**  | [![Academic Code](https://img.shields.io/badge/Origin-Academic%20Code-C1ACA0.svg?style=flat)]() [![License: GPL](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/gpl-3-0) [![contributions welcome](https://img.shields.io/badge/Contributions-Welcome!-orange.svg?style=flat)]()
+| --------------| --------------------------------------------------------------------
+| Authors       | Patrick Jattke, Michele Marazzi, Flavien Solt, Max Wipfli, Stefan Gloor, and Kaveh Razavi
+| Organization  | ETH Zurich, [COMSEC Group](https://comsec.ethz.ch/)
+| Publisher     | [34th USENIX Security Symposium 2025](https://www.usenix.org/conference/usenixsecurity25)
+| Webpage       | https://comsec.ethz.ch/mcsee
+| Paper         | https://comsec-files.ethz.ch/papers/mcsee_sec25.pdf
 
 ## Repositories overview
 
@@ -35,7 +33,14 @@ We bundled all repositories related to McSee in the [mcsee-artifacts](https://gi
    - [**sledgehammer**](https://github.com/mcsee-artifacts/sledgehammer): a fork of SledgeHammer that exposes an argument to only hammer a certain number of banks and instrumentation for the oscilloscope capture.
    - [**rowpress**](https://github.com/mcsee-artifacts/rowpress): a fork of RowPress with improved REF synchronization and instrumented for scope acquisition. 
 
-## Citing our work
+## Data
+
+We provide the raw oscilloscope traces to enable reproducibility of our work without requiring access to the McSee platform. Due to size restrictions on GitHub, we provide the data on Zenodo only under following stable URL: https://zenodo.org/records/15610916.
+
+The Zenodo archive contains a snapshot of all the repositories listed above including a `mcsee-data` directory with the data collected from the oscilloscope. This repository follows the same structure as the `mcsee-experiments` repository.
+
+
+## Citing our paper
 
 ```
 @inproceedings{jattke2025mcsee,
@@ -50,8 +55,7 @@ We bundled all repositories related to McSee in the [mcsee-artifacts](https://gi
 }
 ```
 
-## Citing this repository
+## Citing our code
 
-Please use Zenodo to cite the McSee artifacts. You can find the stable URL here:
-https://zenodo.org/records/15610916.
+Please use Zenodo to cite the McSee platform. You can find the stable URL here: https://zenodo.org/records/15610916.
 
