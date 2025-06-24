@@ -1,6 +1,13 @@
 # McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis
 
-| **Metadata**    |                                                            |
+These are the artifacts for the research paper "McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis" that is to appear at USENIX Security 2025. This repository provides all the resources necessary to explore, reproduce, and build upon our work.
+
+### Abstract
+Our work sheds light on the current state of Rowhammer attacks and defenses by building an automated DRAM traffic analysis platform called McSee. Equipped with this platform, we analyze advanced Rowhammer(-like) attacks on DDR4 and the deployed mitigations in DDR5 systems. We find areas for improvement in existing attacks and show, for the first time, that CPU vendors do not send the necessary RFM commands to DRAM under a Rowhammer workload. We also find that Intel has deployed a pTRR mitigation in its Raptor Lake client CPUs, which we reverse engineer.
+
+###  Metadata
+
+| **Property**    | [![Academic Code](https://img.shields.io/badge/Origin-Academic%20Code-C1ACA0.svg?style=flat)]() [![License: GPL](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/gpl-3-0) [![contributions welcome](https://img.shields.io/badge/Contributions-Welcome!-orange.svg?style=flat)]()                      | 
 |--------------|--------------------------------------------------------------------|
 | Authors      | Patrick Jattke, Michele Marazzi, Flavien Solt, Max Wipfli, Stefan Gloor, and Kaveh Razavi |
 | Organization | ETH Zurich, [COMSEC Group](https://comsec.ethz.ch/)                                           |
@@ -8,11 +15,7 @@
 | Webpage      | https://comsec.ethz.ch/mcsee                                       |
 | Paper        | https://comsec-files.ethz.ch/papers/mcsee_sec25.pdf                |
 
-These are the artifacts for "McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis" (USENIX Sec '25).
 
-Our work sheds light on the current state of Rowhammer attacks and defenses by building an automated DRAM traffic analysis platform called McSee. Equipped with this platform, we analyze advanced Rowhammer(-like) attacks on DDR4 and the deployed mitigations in DDR5 systems. We find areas for improvement in existing attacks and show, for the first time, that CPU vendors do not send the necessary RFM commands to DRAM under a Rowhammer workload. We also find that Intel has deployed a pTRR mitigation in its Raptor Lake client CPUs, which we reverse engineer.
-
-This repository provides all the resources necessary to explore, reproduce, and build upon our work. For more details about McSee, please visit our [website](https://comsec.ethz.ch/mcsee) or read our [paper](https://comsec-files.ethz.ch/papers/mcsee_sec25.pdf).
 
 ## Repositories overview
 
