@@ -20,13 +20,13 @@ Our work sheds light on the current state of Rowhammer attacks and defenses by b
 We bundled all repositories related to McSee in the [mcsee-artifacts](https://github.com/mcsee-artifacts) GitHub organization.
 
 - **Platform & Tools**
-   - [**spd-decoder**](https://github.com/mcsee-artifacts/mcsee-experiments/spd-decoder): we show in §6.1 (RDM on DDR5 Devices) that 55% (16/29) of our DDR5 DIMMs advertise valid RFM values but only 14% (4/29) require RFM. We obtained this information by decoding the SPD chip of our DDR5 DIMMs using the SPD reader of this artifact.
+   - [**spd-decoder**](https://github.com/mcsee-artifacts/spd-decoder): we show in §6.1 (RDM on DDR5 Devices) that 55% (16/29) of our DDR5 DIMMs advertise valid RFM values but only 14% (4/29) require RFM. We obtained this information by decoding the SPD chip of our DDR5 DIMMs using the SPD reader of this artifact.
    - [**ddr5-udimm-interposer-pcb**](https://github.com/mcsee-artifacts/ddr5-udimm-interposer-pcb): as we explain in §4.1 (Hardware Components), we designed a DDR5 UDIMM interposer with soldering points, which makes attaching the oscilloscope probes easier. This artifact contains the complete PCB design files, enabling simple reproduction of our interposer.
    - **Scope data processing pipeline**
    We describe in §4.2 (DDR4 and DDR5 Command Decoder) and in §4.3 (Software) our scope data processing pipeline that enables McSee's automated DRAM traffic analysis.
+      - [**xmldig2csv-converter**](https://github.com/mcsee-artifacts/xmldig2csv-converter): we describe in §4.3 (Software) that a major bottleneck of our pipeline is converting the XMLdig files into CSV files. This artifact contains our parallelized XMLdig-to-CSV converter.
       - [**ddr4-decoder**](https://github.com/mcsee-artifacts/ddr4-decoder): we use the DDR4 decoder in §5 (Analyzing Advanced Attacks) for the analyses of Sledgehammer and Rowpress that we conducted on an Intel Coffee Lake (i7-8700K) system.
       - [**ddr5-decoder**](https://github.com/mcsee-artifacts/ddr5-decoder): we use the DDR5 decoder in §6.2 (DRAM Addressing Functions), §6.3 (RFM on Memory Controllers), and §6.4 (Reverse Engineering Intel's pTRR) that we conducted on Intel Alder Lake (i7-12700K), Intel Raptor Lake (i7-13700K), and an AMD Zen 4 (R7 7700X) system.
-      - [**xmldig2csv-converter**](https://github.com/mcsee-artifacts/xmldig2csv-converter): we describe in §4.3 (Software) that a major bottleneck of our pipeline is converting the XMLdig files into CSV files. This artifact contains our parallelized XMLdig-to-CSV converter.
 
 - **Experiments**
    - [**mcsee-experiments**](https://github.com/mcsee-artifacts/mcsee-experiments): contains the code and instructions to reproduce the experiments of our paper.
